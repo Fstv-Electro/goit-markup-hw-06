@@ -66,36 +66,64 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button type="button" class="hero-btn-close" data-modal-close>
               <svg class="btn-close-svg" width="11" height="11">
-                <use href="./images/sprite-icons.svg#vector">
-                </use>
+                <use href="./images/sprite-icons.svg#vector"></use>
               </svg>
             </button>
             <form class="modal-form">
-              <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+              <h2 class="modal-title">
+                Залиште свої дані, ми вам передзвонимо
+              </h2>
 
-              <label for="">Ім'я</label>
-              <input type="text" name="user-name" autofocus>
+              <div class="form-field">
+                <label class="form-label" for="name">Ім'я</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-name"
+                  id="name"
+                  autofocus
+                />
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="tel">Телефон</label>
+                <input class="form-input" type="tel" name="tel" id="tel" />
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="mail">Пошта</label>
+                <input class="form-input" type="email" name="mail" id="mail" />
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="comment">Коментар</label>
+                <textarea
+                  class="form-textarea"
+                  name="comment"
+                  id="comment"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </div>
+
+              <div class="policy">
+                <input class="policy-input" type="checkbox" name="chx-policy" id="chx-policy" />
+                <label class="policy-label" for="chx-policy"
+                  >Погоджуюся з розсилкою та приймаю</label
+                >
+                <a class="policy-link" href="">Умови договору</a>
+              </div>
               
-              <label for="">Пошта</label>
-              <input type="tel" name="tel">
-
-              <label for="">Ім'я</label>
-              <input type="email" name="mail">
-
-              <label for="">Коментар</label>
-              <textarea placeholder="Введіть текст"></textarea>
-
-              <input type="checkbox" name="" value="Погоджуюся з розсилкою та приймаю" id="">
-              <a href="">Умови договору</a>
-
-              <button type="submit">Відправити</button>
-
+              <div class="policy-btn">
+              <button class="form-btn-submit" type="submit">Відправити</button>
+              </div>
             </form>
           </div>
         </div>
@@ -174,7 +202,7 @@
                   alt="Робота за комп'ютером"
                 />
                 <div class="work-text-overlay">
-                <p class="work-text-forward">десктопні додатки</p>
+                  <p class="work-text-forward">десктопні додатки</p>
                 </div>
               </div>
             </li>
@@ -186,7 +214,7 @@
                   alt="Робота за комп'ютером 2"
                 />
                 <div class="work-text-overlay">
-                <p class="work-text-forward">мобільні додатки</p>
+                  <p class="work-text-forward">мобільні додатки</p>
                 </div>
               </div>
             </li>
@@ -198,7 +226,7 @@
                   alt="Робота за планшетом"
                 />
                 <div class="work-text-overlay">
-                <p class="work-text-forward">дизайнерські рішення</p>
+                  <p class="work-text-forward">дизайнерські рішення</p>
                 </div>
               </div>
             </li>
@@ -534,6 +562,5 @@
     </footer>
 
     <script src="./js/modal.js"></script>
-
   </body>
 </html>
