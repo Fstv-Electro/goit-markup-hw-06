@@ -396,6 +396,9 @@ img {
 .form-field {
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field label {
@@ -405,9 +408,40 @@ img {
 .form-field input {
   margin: 0;
   padding: 12px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.form-icon-box {
+  position: absolute;
+  top: 63%;
+  left: 12px;
+  transform: translateY(-63%);
+}
+
+.form-box {
+  color: var(--text-h-color);
+}
+
+.form-icon {
+  fill: currentColor;
+}
+
+.form-input:focus-visible,
+.form-textarea:focus-visible {
+  outline: none;
+}
+
+.form-field:focus-within > .form-input,
+.form-field:focus-within > .form-textarea {
+  border: 1px solid var(--btn-blue-color);
+}
+
+.form-field:focus-within > .form-icon-box .form-box {
+  color: var(--btn-blue-color);
 }
 
 .form-textarea {
@@ -416,9 +450,12 @@ img {
   padding: 12px 16px;
   height: 120px;
   margin-bottom: 20px;
+  cursor: pointer;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea::placeholder {
@@ -509,6 +546,7 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  cursor: pointer;
 
   color: var(--bcg-white-color);
   background: var(--btn-blue-color);
