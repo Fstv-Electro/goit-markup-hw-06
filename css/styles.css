@@ -298,6 +298,9 @@ img {
 .modal {
   position: absolute;
   display: flex;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
   top: 50%;
   left: 50%;
   transform: scale(1) translate(-50%, -50%);
@@ -339,6 +342,7 @@ img {
   width: 11px;
   height: 11px;
   fill: currentColor;
+  cursor: pointer;
 }
 
 .hero-btn-close:hover,
@@ -378,14 +382,6 @@ img {
 
   min-height: 100%;
   width: 100%;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var(--text-color);
-
-  padding: 40px;
 }
 
 .modal-title {
@@ -402,6 +398,8 @@ img {
   flex-direction: column;
   position: relative;
 
+  margin-bottom: 10px;
+
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -410,20 +408,26 @@ img {
 }
 
 .form-field input {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+
   margin: 0;
   padding: 12px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
+  
   cursor: pointer;
 }
 
 .form-icon-box {
   position: absolute;
-  top: 63%;
+  top: 50%;
   left: 12px;
-  transform: translateY(-63%);
+  
 }
 
 .form-box {
@@ -449,11 +453,17 @@ img {
 }
 
 .form-textarea {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+
   resize: none;
   margin: 0;
   padding: 12px 16px;
   height: 120px;
-  margin-bottom: 20px;
+
   cursor: pointer;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -545,6 +555,7 @@ img {
 
   width: 200px;
   height: 50px;
+  margin: 0 auto;
 
   font-weight: 700;
   font-size: 16px;
