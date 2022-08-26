@@ -397,13 +397,20 @@ img {
   display: flex;
   flex-direction: column;
   position: relative;
-
   margin-bottom: 10px;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.comment {
+  margin-bottom: 20px;
+}
+
 .form-field label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
 
@@ -419,7 +426,7 @@ img {
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  
+
   cursor: pointer;
 }
 
@@ -427,7 +434,6 @@ img {
   position: absolute;
   top: 50%;
   left: 12px;
-  
 }
 
 .form-box {
